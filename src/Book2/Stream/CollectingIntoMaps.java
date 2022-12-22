@@ -1,4 +1,4 @@
-package Book2.Stream_;
+package Book2.Stream;
 
 import java.io.IOException;
 import java.util.*;

@@ -1,6 +1,7 @@
 package Adapter;
 
 public class JavaApplication {
+
     public void saveObject(){
         System.out.println("Saving Java object...");
     }

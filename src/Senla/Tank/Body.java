@@ -13,15 +13,14 @@ public class Body implements IProductPart{
         return serialNumber;
     }
 
-    public void setSerialNumber(String serialNumber) {
-        this.serialNumber = serialNumber;
-    }
-
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
+    @Override
+    public String toString() {
+        return "{serialNumber= '" + serialNumber + '\'' +
+                ", color= '" + color + '\'' +
+                '}';
     }
 }

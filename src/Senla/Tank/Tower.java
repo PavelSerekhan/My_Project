@@ -13,15 +13,14 @@ public class Tower implements IProductPart {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public String getPushka() {
         return pushka;
     }
 
-    public void setPushka(String pushka) {
-        this.pushka = pushka;
+    @Override
+    public String toString() {
+        return "{color= '" + color + '\'' +
+                ", pushka= '" + pushka + '\'' +
+                '}';
     }
 }

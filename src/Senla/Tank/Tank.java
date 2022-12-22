@@ -49,4 +49,13 @@ public class Tank implements IProduct {
     public void setEngine(IProductPart engine) {
         this.engine = engine;
     }
+
+    @Override
+    public String toString() {
+        return "Танк{" +
+                "корпус =" + body +
+                ", башня =" + tower +
+                ", двигатель =" + engine +
+                '}';
+    }
 }

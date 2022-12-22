@@ -97,7 +97,8 @@ public class Stream__ {
 
     public static Stream<Language> sortByRanking(ArrayList<Language> languages) {
         //напишите тут ваш код
-        return languages.stream().sorted(Comparator.comparingDouble(Language::getRanking).reversed());
+        return languages.stream()
+                .sorted(Comparator.comparingDouble(Language::getRanking).reversed());
     }
 }
 

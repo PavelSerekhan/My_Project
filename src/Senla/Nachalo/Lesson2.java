@@ -1,4 +1,4 @@
-package Senla;
+package Senla.Nachalo;
 
 import java.util.Scanner;
 

@@ -2,6 +2,8 @@ package Book.ExtendsOOP;
 
 public class Manager extends Employee {
     private double bonus;
+    private  Employee secretary;
+
     /**
      * @param name   Имя работника
      * @param salary Зарплата
@@ -14,6 +16,14 @@ public class Manager extends Employee {
         this.bonus = 0;
     }
 
+    public void setSecretary(Employee secretary) {
+        this.secretary = secretary;
+    }
+
+    public Employee getSecretary() {
+        return secretary;
+    }
+
     public void setBonus(double bonus) {
         this.bonus = bonus;
     }
@@ -22,4 +32,5 @@ public class Manager extends Employee {
     public double getSalary() {
         return super.getSalary() + bonus;  // слово super для вызова метода класса родителя!
     }
+
 }

@@ -1,4 +1,4 @@
-package Book2.Stream_.Vvod_Vvyvod;
+package Book2.Vvod_Vvyvod;
 
 import Book.ExtendsOOP.Employee;
 

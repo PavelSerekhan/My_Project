@@ -13,15 +13,14 @@ public class Engine implements IProductPart{
         return serialNumber;
     }
 
-    public void setSerialNumber(String serialNumber) {
-        this.serialNumber = serialNumber;
-    }
-
     public int getPower() {
         return power;
     }
 
-    public void setPower(int power) {
-        this.power = power;
+    @Override
+    public String toString() {
+        return  "{serialNumber= '" + serialNumber + '\'' +
+                ", power= " + power +
+                '}';
     }
 }

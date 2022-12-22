@@ -1,8 +1,9 @@
 package Book.ExtendsOOP;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public class Employee {
+public class Employee implements Serializable {
 
     private String name;
     private double salary;
@@ -11,10 +12,10 @@ public class Employee {
     public Employee(String name, double salary, int year, int month, int day) {
         this.name = name;
         this.salary = salary;
-        this.hireDay = LocalDate.of(year,month,day);
+        this.hireDay = LocalDate.of(year, month, day);
     }
 
-     public String getName() {
+    public String getName() {
         return name;
     }
 
@@ -25,8 +26,16 @@ public class Employee {
     public LocalDate getHireDay() {
         return hireDay;
     }
-    public void raiseSalary(double byPercent){
+
+    public void raiseSalary(double byPercent) {
         double raise = salary * byPercent / 100;
         salary += raise;
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + getName() + ", salary: " + getSalary() + ", hire day: "
+                + getHireDay();
+    }
+
 }
